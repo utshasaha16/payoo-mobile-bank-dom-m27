@@ -8,9 +8,9 @@ document.getElementById('add-money-btn')
         const inputPinNumber = document.getElementById('input-pin-number').value;
         // verify the pin
         if(inputPinNumber === '1234'){
-            console.log('added money to your account');
             // step-4 = get the account balance
-            const accountBalance = document.getElementById('account-balance').innerText;
+            const accountBalance = document.getElementById('account-balance')
+            .innerText;
             const addMoney = parseFloat(addMoneyInput);
             const balance = parseFloat(accountBalance);
             const newBalance = addMoney + balance;
